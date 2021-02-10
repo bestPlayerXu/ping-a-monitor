@@ -6,8 +6,9 @@ module.exports = (url, interval, ping, options) => {
 		try {
 			require('node-fetch')(url + (options && options.sendInQuery ? '?ping=' + pingRN : ''), {
 				method: 'POST',
-				body: options && !options.sendInQuery ? (options && options.sendInJSON ? JSON.stringify({ ping: pingRN }) : '' + pingRN)) : '',
+				body: options && !options.sendInQuery ? (options && options.sendInJSON ? JSON.stringify({ ping: pingRN }) : '' + pingRN) : '',
 				headers: { 'Content-Type': 'application/' + (options && options.sendInJSON ? 'json' : 'text') }
+			});
 		} catch (e) { console.warn(e) }
 	}
 	if (options && options.sendAtStart) pingTheMonitor();
