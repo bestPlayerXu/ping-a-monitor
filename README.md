@@ -1,4 +1,4 @@
-# pingmonitor
+# ping-a-monitor
 Pings the monitor with a ping (for discord ws ping?) every x seconds to XYZ website.
 
 How to use it:
