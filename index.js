@@ -3,7 +3,7 @@ module.exports = (url, interval, ping, options) => {
 	var ping = () => {
 		if (!ping.ping || !isNumber(ping.ping)) return console.warn('Nothing has been sent because the third argument need to be an object that contains a key with `ping` which has to be a number';
 		try {
-			require('node-fetch')(url + (options && options.sendInQuery ? '?' + ping.ping : ''), options && options.sendAsJSON ? ping : '' + ping.ping);
+			require('node-fetch')(url + (options && options.sendInQuery ? '?' + ping.ping : ''), options && options.sendInJSON ? ping : '' + ping.ping);
 		catch (e) { console.warn(e) }
 	}
 	if (options && options.sendAtStart) ping();
