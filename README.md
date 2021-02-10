@@ -3,9 +3,7 @@ Pings the monitor with a ping (for discord ws ping?) every x seconds to XYZ webs
 
 How to use it:
 ```
-var objectWithPing = { ping: shouldBeUpdated };
-require('pingmonitor')('https:ping.that/u/r.l', intervalInMs, objectWithPing, { sendInQuery: false, sendInJSON: true, sendAtStart: true })
-setTimeout(() => objectWithPing.ping = someNewNumber, afterSomeTime);
+require('pingmonitor')('https:ping.that/u/r.l', intervalInMs, () => ping, { sendInQuery: false, sendInJSON: true, sendAtStart: true });
 ```
 This code is pinging `https:ping.that/u/r.l` every intervalInMs milliseconds with an object `{ ping: number }`.
 
