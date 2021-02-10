@@ -1,6 +1,6 @@
 {
   "name": "ping-a-monitor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pings the monitor with a ping (for discord ws ping?) every x seconds to XYZ website.",
   "main": "index.js",
   "dependencies": {
