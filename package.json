@@ -1,26 +1,27 @@
 {
-  "name": "pingmonitor",
+  "name": "ping-a-monitor",
   "version": "1.0.0",
   "description": "Pings the monitor with a ping (for discord ws ping?) every x seconds to XYZ website.",
   "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bestPlayerXu/pingmonitor.git"
+    "url": "git+ssh://git@github.com/bestPlayerXu/ping-a-monitor.git"
   },
   "keywords": [
     "ping",
     "monitor"
   ],
   "author": "bestPlayer_xu",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bestPlayerXu/pingmonitor/issues"
+    "url": "https://github.com/bestPlayerXu/ping-a-monitor/issues"
   },
-  "homepage": "https://github.com/bestPlayerXu/pingmonitor#readme",
-  "dependencies": {
-    "node-fetch": "^2.6.1"
-  }
+  "homepage": "https://github.com/bestPlayerXu/ping-a-monitor#readme"
 }
